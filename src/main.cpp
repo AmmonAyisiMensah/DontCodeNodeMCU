@@ -1,12 +1,5 @@
-#include <Arduino.h>
-#include "driver.h"
+#include "nodemcu.h"
 
-void setup() {
-  // put your setup code here, to run once:
-  theNodeMCU = new Driver();
-}
-
-void loop() {
-  // put your main code here, to run repeatedly:
-  theNodeMCU->run();
-}
+NodeMCU theNodeMCU;
+void setup() {}
+void loop() { theNodeMCU.run(); }
